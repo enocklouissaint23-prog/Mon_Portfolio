@@ -1,0 +1,587 @@
+body {
+    background-color: #adaab6;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;          /* permet de mettre le titre et le menu sur la même ligne */
+    justify-content: space-between; /* titre à gauche, menu à droite */
+    align-items: center;
+    background-color: #262628;
+    padding: 10px 20px;
+}
+
+.header .logo h1 a {
+    color: #4dbe45;
+    text-decoration: none;
+    font-family: "Lucida Handwriting", cursive; /* police */
+    font-size: 26px;
+}
+.header .logo h1{
+    color: white;
+    font-weight: bold;            /* texte en gras */
+    font-family: "Lucida Handwriting", cursive; /* police */
+    font-size: 26px;
+}
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;           /* les liens en ligne */
+}
+
+.menu li {
+    margin-left: 20px;      /* espace entre les liens */
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+
+.menu li a:hover {
+    background-color: #4dbe45;
+    border-radius: 4px;      /* petit arrondi pour l'effet hover */
+}
+
+
+/* Description 
+.description {
+    padding: 150px 20px;
+    background-color: #1f983f;
+    text-align: center;
+}
+*/
+/* Section Hero */
+.hero {
+    padding: 60px 20px;
+    background-color: #1f983f; /* Vert moderne */
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap; /* Pour mobile */
+}
+
+/* Texte */
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-family: "Lucida Handwriting", cursive;
+    font-size: 44px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #f0f0f0;
+    margin-bottom: 30px;
+}
+
+/* Bouton */
+.hero-text button {
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #4dbe45;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero-text button:hover {
+    background-color: #3a8b32;
+}
+
+/* Image */
+.hero-image {
+    flex: 1;
+    text-align: right;
+}
+
+.hero-image img {
+    max-width: 700px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Compétences */
+.competences {
+    padding: 150px 20px;
+    background-color: #e0e0ff;
+    text-align: center;
+}
+
+/* Contact / Footer */
+.contact {
+    padding: 50px 20px;
+    background-color: #300aca;
+    color: white;
+    text-align: center;
+}
+
+/* Container de la section à propos */
+.about-container {
+    display: flex;             /* met l'image et le texte sur la même ligne */
+    align-items: center;       /* aligne verticalement */
+    gap: 10px;                 /* espace entre image et texte */
+    padding: 30px 20px;
+    background-color: #f0f0f0;
+    flex-wrap: wrap;           /* pour que sur mobile, l'image passe au-dessus du texte */
+}
+
+/* Image */
+.about-image img {
+    max-width: 580px;
+    width: 100%;
+    border-radius: 10px;       /* coins arrondis */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* ombre légère */
+}
+
+/* Texte */
+.about-text {
+    flex: 1;                    /* prend le reste de l'espace */
+}
+
+.about-text h2 {
+    color: #4dbe45;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.about-text button:hover {
+    background-color: #3a8b32; /* couleur plus foncée au survol */
+}
+
+/* Hamburger : 3 barres */
+.hamburger {
+    display: none; /* caché sur desktop */
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: 0.3s;
+}
+/* Section Mes Projets */
+.projects {
+    padding: 60px 20px 100px 20px; /* top 60px au lieu de 100px */
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 36px;
+    color: #262628;
+    margin-bottom: 40px;
+}
+
+/* Conteneur des cartes */
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap; /* responsive */
+}
+
+/* Carte d'un projet */
+.project-card {
+    background: #f5f5f5;
+    width: 300px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    text-align: left;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Titre */
+.project-card h3 {
+    font-size: 24px;
+    color: #4dbe45;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Texte */
+.project-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Bouton */
+.project-card button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4dbe45;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.project-card button:hover {
+    background-color: #3a8b32;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;          /* caché par défaut */
+        flex-direction: column;
+        width: 100%;
+        background-color: #262628;
+        text-align: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    .menu.active {
+        display: flex;          /* affiché lorsque clic */
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .hero-container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-image {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .hero-text button {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .button-container {
+        text-align: center;
+    }
+}
+
+.competences {
+    padding: 100px 20px;
+    background-color: #e0e0ff;
+    text-align: center;
+}
+
+.competences h2 {
+    font-size: 36px;
+    color: #262628;
+    margin-bottom: 50px;
+}
+
+/* Skill */
+.skill {
+    margin-bottom: 25px;
+    text-align: left;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skill p {
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+/* Barre de compétence */
+.skill-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Niveau */
+.skill-level {
+    height: 100%;
+    background-color: #4dbe45;
+    border-radius: 10px 0 0 10px;
+    text-align: right;
+    line-height: 20px;
+    color: white;
+    font-weight: bold;
+    padding-right: 5px;
+    transition: width 1.5s ease-in-out; /* animation */
+}
+
+.map {
+    padding: 80px 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.map h2 {
+    font-size: 36px;
+    color: #262628;
+    margin-bottom: 40px;
+}
+
+.map-container {
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.contact-form {
+    padding: 80px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.contact-form h2 {
+    font-size: 36px;
+    color: #262628;
+    margin-bottom: 50px;
+}
+
+/* Formulaire */
+.contact-form form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    
+}
+.green-text {
+    color: #4dbe45;
+    font-weight: bold;  /* optionnel */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #1e1c1c;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #4dbe45;
+    outline: none;
+}
+
+/* Bouton */
+.contact-form button {
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #4dbe45;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #3a8b32;
+}
+/* FOOTER */
+.contact {
+    padding: 40px 20px;
+    background-color: #1e1e1e;
+    color: white;
+}
+
+/* Layout : gauche + centre */
+.footer-container {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+/* Colonne gauche */
+.footer-left {
+    text-align: left;
+}
+
+.footer-left h3 {
+    color: #4dbe45;
+    margin-bottom: 10px;
+}
+
+/* Liens sociaux */
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-links a {
+    padding: 10px 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    width: 150px;
+    text-align: center;
+}
+
+/* Couleurs officielles */
+.whatsapp { background: #25D366; }
+.facebook { background: #1877F2; }
+.instagram { background: #E1306C; }
+.linkedin { background: #0077B5; }
+
+/* Effet hover */
+.social-links a:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+/* Centre */
+.footer-center h2 {
+    color: #4dbe45;
+}
+
+.footer-center p {
+    margin: 5px 0;
+}
+
+/* Copyright */
+.contact .copyright {
+    text-align: center;
+    margin-top: 25px;
+    opacity: 0.7;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .footer-left {
+        text-align: center;
+    }
+
+    .social-links {
+        align-items: center;
+    }
+}
+
+/*Bac button*/
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 15px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #4dbe45;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: none; /* caché par défaut */
+    box-shadow: 0 5px 12px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+#backToTop:hover {
+    background-color: #3a8b32;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .contact-form form {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+   .hero-container {
+    flex-direction: column; /* image au-dessus du texte */
+}
+    .hero-image {
+    order: -1; /* image passe avant le texte */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.hero-text {
+    order: 0; /* texte après l'image */
+}
+    .hero-text h1 {
+        font-size: 36px;
+    }
+    .hero-text p {
+        font-size: 16px;
+    }
+    .hero-text button {
+        margin: 0 auto;
+        display: block;
+    }
+}

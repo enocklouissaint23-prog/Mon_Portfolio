@@ -1,0 +1,297 @@
+<!DOCTYPE html lang= "fr">
+<html>
+<head>
+    <!-- Mots-clés: HTML, CSS, JavaScript -->
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+
+    <!-- Descriptions de la page Web : Initiation en HTML -->
+    <meta name="description" content="monpremiersite">
+
+    <!-- Auteur de la page: D-CLIC -->
+    <meta name="Enock" content="Site_ORG">
+
+    <!-- Encodage de Caractères : UTF-8 -->
+    <meta charset="utf-8">
+
+    <!-- Date d'actualisation de la page : 60 secondes -->
+    <meta http-equiv="refresh" content="30">
+
+    <!-- Mode d'affichage: Le site Web a belle apparence sur tous les appareils: -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>monpremiersite.html</title>
+</head>
+<body>
+    <nav class="header">
+        <div class="logo">
+            <h1>LOUISSAINT + <a href="#">TECH</a></h1>
+        </div>
+         <!-- Hamburger pour mobile -->
+    <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+        <ul class="menu">
+            <li><a href="#Accueil">Accueil</a></li>
+            <li><a href="#apropos">À propos</a></li>
+            <li><a href="#projets">projets</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+      <!-- Partie 1 : Description -->
+    <section class="hero" id="Accueil">
+    <div class="hero-container">
+        <!-- Texte à gauche -->
+        <div class="hero-text">
+            <h1>TECH-MOBILE_LOUISSAINT</h1>
+            <p>
+                Bienvenue sur le site officiel de <strong>TECH-MOBILE_LOUISSAINT</strong>. 
+                Nous sommes spécialisés dans le développement web, la cybersécurité et les solutions technologiques innovantes pour les entreprises et les particuliers. 
+                Notre mission est de transformer vos idées en projets numériques performants et modernes.
+            </p>
+            <button onclick="window.alert('Bienvenue chez TECH-MOBILE_LOUISSAINT !')">
+                En savoir d'avantage
+            </button>
+        </div>
+
+        <!-- Image à droite -->
+        <div class="hero-image">
+            <img src="R (1).jpg" alt="TECH-MOBILE_LOUISSAINT">
+        </div>
+    </div>
+</section>
+
+    <!-- Partie 1 : Description avec image et texte -->
+<section class="description_1" id="apropos">
+    <div class="about-container">
+        <div class="about-image">
+            <img src="features_1.jpg" alt="Enock Louissaint" />
+        </div>
+        <div class="about-text">
+            <h2>À propos de moi</h2>
+            <p>
+                Bonjour ! Je m'appelle <strong>Enock Louissaint</strong> et je suis passionné par l'informatique, le développement web et la cybersécurité. 
+                Depuis mon plus jeune âge, j’ai toujours été fasciné par la technologie et par la manière dont elle transforme notre quotidien. 
+                Mon objectif est de créer des solutions digitales innovantes et efficaces pour répondre aux besoins des entreprises et des particuliers.
+            </p>
+            <p>
+                Au cours de mon parcours, j’ai acquis de solides compétences en programmation (HTML, CSS, JavaScript, Python) ainsi qu’en administration des réseaux et en cybersécurité. 
+                J’ai également suivi plusieurs formations professionnelles et obtenu des certifications reconnues, ce qui me permet d’allier théorie et pratique pour réaliser des projets concrets.
+            </p>
+            <p>
+                Je suis motivé, rigoureux et toujours prêt à relever de nouveaux défis. Sur ce site, vous découvrirez mon parcours, mes projets, mes compétences et la manière dont je peux contribuer à des initiatives technologiques innovantes. 
+                Mon ambition est de continuer à apprendre, à me perfectionner et à partager mes connaissances avec la communauté.
+            </p>
+        </div>
+    </div>
+    <script>
+function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('active');
+}
+</script>
+<section class="projects" id="projets">
+    <h2>Mes Projets</h2>
+
+    <div class="projects-container">
+
+        <!-- Projet Réseau -->
+        <div class="project-card">
+            <h3>Réseaux</h3>
+            <p>
+                Configuration de VLANs, routage, DHCP, topologies complexes et gestion d’infrastructures 
+                réseau sécurisées pour entreprises et particuliers.
+            </p>
+           <button onclick="openMiniPage1()">En savoir plus</button>
+            <script>
+            function openMiniPage1() {
+                 window.open(
+             "pages2.html", 
+              "miniPage",
+           "width=500,height=400,left=200,top=100"
+    );
+}
+</script>
+
+        </div>
+
+        <!-- Projet Cybersécurité -->
+        <div class="project-card">
+            <h3>Cybersécurité</h3>
+            <p>
+                Analyse de vulnérabilités, protection d’infrastructures, sécurisation de systèmes 
+                et bonnes pratiques pour réduire les risques cyber.
+            </p>
+            <button onclick="openMiniPage3()">En savoir plus</button>
+            <script>
+            function openMiniPage3() {
+                 window.open(
+             "page3.html", 
+              "miniPage",
+           "width=500,height=400,left=200,top=100"
+             );
+           }
+           </script>
+        </div>
+
+        <!-- Projet Hacking -->
+        <div class="project-card">
+            <h3>Hacking Éthique</h3>
+            <p>
+                Tests d’intrusion, exploitation de failles, audits complets et accompagnement dans 
+                le renforcement des systèmes informatiques.
+            </p>
+            <button onclick="openMiniPage2()">En savoir plus</button>
+            <script>
+            function openMiniPage2() {
+                 window.open(
+             "page1.html", 
+              "miniPage",
+           "width=500,height=400,left=200,top=100"
+             );
+           }
+           </script>
+        </div>
+
+    </div>
+</section>
+
+
+</section>
+    <!-- Partie 2 : Compétences / Contenu principal -->
+    <section class="competences" id="competences">
+    <h2>Mes compétences</h2>
+
+    <div class="skill">
+        <p>HTML & CSS</p>
+        <div class="skill-bar">
+            <div class="skill-level" style="width: 50%;"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <p>JavaScript</p>
+        <div class="skill-bar">
+            <div class="skill-level" style="width: 40%;"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <p>Programmation Python</p>
+        <div class="skill-bar">
+            <div class="skill-level" style="width: 65%;"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <p>Réseaux & Cybersécurité</p>
+        <div class="skill-bar">
+            <div class="skill-level" style="width: 95%;"></div>
+        </div>
+    </div>
+</section>
+
+<section class="map">
+    <h2>Où nous trouver</h2>
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30488.123456!2d-72.123456!3d19.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8b0abcdef12345%3A0xabcdef1234567890!2sPort-de-Paix%2C%20Haïti!5e0!3m2!1sfr!2sht!4v1699999999999" 
+            width="100%" 
+            height="400" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</section>
+<section class="contact-form">
+    <h2>Vous avez un projet en tête ? <span class="green-text">Écrivez-nous !</span></h2>
+
+    <form>
+        <div class="form-group">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" placeholder="Votre nom" required>
+        </div>
+
+        <div class="form-group">
+            <label for="name">Prenom :</label>
+            <input type="text" id="name" name="name" placeholder="Votre Prenom" required>
+        </div>
+
+        <div class="form-group">
+             <label for="phone">Téléphone :</label>
+            <input type="tel" id="phone" name="phone" placeholder="+509 1234 5678" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" placeholder="enock@example.com" required>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
+        </div>
+
+        <button type="submit">Envoyer</button>
+    </form>
+</section>
+
+
+    <!-- Partie 3 : Contact / Footer -->
+   <footer class="contact" id="contact">
+    
+    <div class="footer-container">
+
+        <!-- Réseaux sociaux à gauche -->
+        <div class="footer-left">
+            <h3>Réseaux</h3>
+            <div class="social-links">
+                <a href="https://wa.me/qr/OOOEJFID4BOME1" class="whatsapp">WhatsApp</a>
+                <a href="https://www.facebook.com/henock.louissaint" class="facebook">Facebook</a>
+                <a href="https://www.instagram.com/henocklouissaint?igsh=MW96aWcyOWtjc3UyOQ==" class="instagram">Instagram</a>
+                <a href="https://www.linkedin.com/in/enock-louissaint-091219252?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="linkedin">LinkedIn</a>
+            </div>
+        </div>
+
+        <!-- Contact au centre -->
+        <div class="footer-center">
+            <h2>Contactez-moi</h2>
+            <p>Email : enocklouissaint@gmail.com</p>
+            <p>Téléphone : +509 4211 9437</p>
+        </div>
+
+        <!-- Copyright en bas -->
+    </div>
+
+    <p class="copyright">
+        © 2025 TECH-MOBILE_LOUISSAINT — Tous droits réservés.
+    </p>
+</footer>
+
+<button id="backToTop">▲</button>
+<script>
+    // Montrer le bouton quand on scroll
+    window.addEventListener("scroll", function() {
+        let btn = document.getElementById("backToTop");
+        if (window.scrollY > 300) {
+            btn.style.display = "block";
+        } else {
+            btn.style.display = "none";
+        }
+    });
+
+    // Scroll vers le haut
+    document.getElementById("backToTop").addEventListener("click", function() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"  // défilement doux
+        });
+    });
+</script>
+
+</body>
+</html>
